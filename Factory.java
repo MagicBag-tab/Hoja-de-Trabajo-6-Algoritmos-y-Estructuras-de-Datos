@@ -6,13 +6,13 @@ public class Factory {
 
         switch (name) {
             case "HashMap":
-                return;
+                return HashMapOP();
 
             case "TreeMap":
-                return;
+                return TreeMapOP();
 
             case "LinkedHashMap":
-                return;
+                return LinkedHashMap();
 
             default:
                 throw new IllegalArgumentException("Elemento incorreto");
