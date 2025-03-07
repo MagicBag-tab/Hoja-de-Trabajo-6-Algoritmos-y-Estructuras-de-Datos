@@ -1,4 +1,7 @@
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 public class Factory {
 
@@ -6,17 +9,19 @@ public class Factory {
 
         switch (name) {
             case "HashMap":
-                return HashMapOP();
+                Map<String, String> hmap = new HashMap<>();
+                return hmap;
 
             case "TreeMap":
-                return TreeMapOP();
+                Map<String, String> tmap = new TreeMap<>();
+                return tmap;
 
             case "LinkedHashMap":
-                return LinkedHashMap();
+                Map<String, String> lmap = new LinkedHashMap<>();
+                return lmap;
 
             default:
                 throw new IllegalArgumentException("Elemento incorreto");
-                break;
         }
     }
 }
