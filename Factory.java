@@ -5,7 +5,7 @@ import java.util.TreeMap;
 
 public class Factory {
     /*
-     * Clase Factory la cual crea un tipo de map dependiendo de lo que se elija
+     * Clase Factory la cual crea un tipo de map dependiendo de lo que se elija.
      */
     public static Map<String, String> CreateMap(String name) {
 
