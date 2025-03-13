@@ -11,16 +11,13 @@ public class Factory {
 
         switch (name) {
             case "HashMap":
-                Map<String, String> hmap = new HashMap<>();
-                return hmap;
+                return new HashMap<>();
 
             case "TreeMap":
-                Map<String, String> tmap = new TreeMap<>();
-                return tmap;
+                return new TreeMap<>();
 
             case "LinkedHashMap":
-                Map<String, String> lmap = new LinkedHashMap<>();
-                return lmap;
+                return new LinkedHashMap<>();
 
             default:
                 throw new IllegalArgumentException("Elemento incorreto");
