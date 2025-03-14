@@ -7,20 +7,53 @@
 public class Pokemon {
 
     public String name;
+    public String pokedex;
+    public String type1;
     public String type2;
     public String classification;
-    public Double height;
-    public Double weight;
+    public String height;
+    public String weight;
     public String abilities;
-    public int generation;
+    public String generation;
     public String status;
 
-    public String getName() {
-        return name;
+    public Pokemon(String name, String pokedex, String type1, String type2, String classification, String height,
+            String weight,
+            String abilities, String generation, String status) {
+        this.name = name;
+        this.pokedex = pokedex;
+        this.type1 = type1;
+        this.type2 = type2;
+        this.classification = classification;
+        this.height = height;
+        this.weight = weight;
+        this.abilities = abilities;
+        this.generation = generation;
+        this.status = status;
     }
 
+    public String getname() {
+        return name;
+    }
+    
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getpokedex() {
+        return pokedex;
+    }
+    
+    public void setpokedex(String pokedex) {
+        this.pokedex = pokedex;
+    }
+
+    public String getType1() {
+        return type1;
+    }
+
+    public void setType1(String type1) {
+        this.type1 = type1;
     }
 
     public String getType2() {
@@ -39,19 +72,19 @@ public class Pokemon {
         this.classification = classification;
     }
 
-    public Double getHeight() {
+    public String getHeight() {
         return height;
     }
 
-    public void setHeight(Double height) {
+    public void setHeight(String height) {
         this.height = height;
     }
 
-    public Double getWeight() {
+    public String getWeight() {
         return weight;
     }
 
-    public void setWeight(Double weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
@@ -63,11 +96,11 @@ public class Pokemon {
         this.abilities = abilities;
     }
 
-    public int getGeneration() {
+    public String getGeneration() {
         return generation;
     }
 
-    public void setGeneration(int generation) {
+    public void setGeneration(String generation) {
         this.generation = generation;
     }
 
@@ -81,9 +114,9 @@ public class Pokemon {
 
     @Override
     public String toString() {
-        return "Pokemon [name=" + name + ", type2=" + type2 + ", classification=" + classification + ", height="
-                + height + ", weight=" + weight + ", abilities=" + abilities + ", generation=" + generation
-                + ", status=" + status + "]";
+        return "Pokemon [name=" + name + ", type1=" + type1 + ", type2=" + type2 + ", classification=" + classification
+                + ", height=" + height + ", weight=" + weight + ", abilities=" + abilities + ", generation="
+                + generation + ", status=" + status + "]";
     }
 
 }
