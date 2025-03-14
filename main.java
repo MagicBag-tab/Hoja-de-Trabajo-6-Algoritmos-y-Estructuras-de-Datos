@@ -141,7 +141,7 @@ public class Main {
                     + pokemon.getStatus());
 
         } catch (IOException e) {
-            System.err.println("❌ Error al guardar la colección: " + e.getMessage());
+            System.err.println("Error al guardar la colección: " + e.getMessage());
         }
     }
 
@@ -162,7 +162,7 @@ public class Main {
                 userCollection.put(data[0], p);
             }
         } catch (IOException e) {
-            System.err.println("❌ Error al cargar la colección: " + e.getMessage());
+            System.err.println("Error al cargar la colección: " + e.getMessage());
         }
     }
 }
