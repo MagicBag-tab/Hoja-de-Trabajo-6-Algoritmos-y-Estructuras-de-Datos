@@ -8,14 +8,14 @@ public class FileReaderPokemon {
     public static Map<String, Pokemon> loadPokemonData(String filePath, Map<String, Pokemon> pokemonMap) {
         String line;
         try (BufferedReader br = new BufferedReader(new FileReader(filePath))) {
-            br.readLine(); // Saltar la primera línea (encabezados)
+            br.readLine();
 
             while ((line = br.readLine()) != null) {
-                // 🔹 Dividir la línea en partes sin perder valores vacíos
+
                 String[] data = line.split(",", -1);
 
                 if (data.length < 10)
-                    continue; // Asegurar que hay suficientes columnas
+                    continue;
 
                 String name = data[0].trim();
                 String pokedex = data[1].trim();
