@@ -7,7 +7,7 @@ public class Factory {
     /*
      * Clase Factory la cual crea un tipo de map dependiendo de lo que se elija.
      */
-    public static Map<String, String> CreateMap(String name) {
+    public static Map<String, Pokemon> CreateMap(String name) {
 
         switch (name) {
             case "HashMap":
